@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PnP Toolbox</string>
+    <string name="hello">Hello pnp-toolbox!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="character_sheet_header">Character Sheet</string>
+
+</resources>
