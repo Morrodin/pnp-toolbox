@@ -2,6 +2,9 @@
 *.apk
 *.ap_
 
+#generated files
+/target/generated-sources/
+
 # files for the dex VM
 *.dex
 

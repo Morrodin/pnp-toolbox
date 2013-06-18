@@ -7,6 +7,8 @@ import android.widget.Spinner;
 import com.gaems.pnptoolbox.R;
 import com.gaems.pnptoolbox.controllers.SpinnerController;
 import com.gaems.pnptoolbox.views.fragments.CharacterSheetFragment;
+import com.gaems.pnptoolbox.views.fragments.NotesFragment;
+import com.gaems.pnptoolbox.views.fragments.SpellsFragment;
 
 /**
  * Management activity for the primary dual-panel layout
@@ -16,7 +18,10 @@ import com.gaems.pnptoolbox.views.fragments.CharacterSheetFragment;
 public class DualPaneActivity extends FragmentActivity implements SpinnerController.SpinnerCallback {
 
     SpinnerController mSpinnerController;
+
     CharacterSheetFragment characterSheetFragment;
+    SpellsFragment spellsFragment;
+    NotesFragment notesFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,8 @@ public class DualPaneActivity extends FragmentActivity implements SpinnerControl
 
     private void initializeFragments() {
         characterSheetFragment = new CharacterSheetFragment();
+        spellsFragment = new SpellsFragment();
+        notesFragment = new NotesFragment();
     }
 
     @Override
@@ -42,17 +49,26 @@ public class DualPaneActivity extends FragmentActivity implements SpinnerControl
             //Character sheet
             case 0:
                 getSupportFragmentManager().beginTransaction()
-                        .add(R.id.fragment_container_1, characterSheetFragment).commit();
+                        .replace(R.id.fragment_container_1, characterSheetFragment).commit();
+                break;
         }
     }
 
     @Override
     public void spinner2Callback(int pos) {
         switch(pos) {
-            //Character sheet
+
+            //Spells
             case 0:
                 getSupportFragmentManager().beginTransaction()
-                        .add(R.id.fragment_container_2, characterSheetFragment).commit();
+                        .replace(R.id.fragment_container_2, spellsFragment).commit();
+                break;
+            //Notes
+            case 1:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container_2, notesFragment).commit();
+                break;
+
         }
     }
 }

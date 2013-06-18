@@ -22,35 +22,67 @@
       </GlobalState>
     </option>
     <device-configurations>
-      <entry key="file://$PROJECT_DIR$/res/layout/dual_panel_activity.xml" value="Landscape" />
+      <entry key="file://$PROJECT_DIR$/res/layout/spells_fragment.xml" value="Landscape" />
     </device-configurations>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6155db48-8cc1-4f03-a357-e6791236f83b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/CharacterSheetFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/arrays.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/character_sheet_fragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/dual_panel_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/NotesFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/SpellsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/notes_fragment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/spells_fragment.xml" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__com_google_android_android_4_1_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__com_google_android_support_v4_r7.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__commons_codec_commons_codec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__org_json_json_20080701.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__org_khronos_opengl_api_gl1_1_android_2_1_r1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__xerces_xmlParserAPIs_2_6_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\libraries\Maven__xpp3_xpp3_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\pnp-toolbox.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\target\generated-sources\r\com\gaems\pnptoolbox\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\target\generated-sources\r\com\gaems\pnptoolbox\Manifest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\kwatson\IdeaProjects\Android Projects\pnp-toolbox\target\generated-sources\r\com\gaems\pnptoolbox\R.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java" afterPath="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/arrays.xml" afterPath="$PROJECT_DIR$/res/values/arrays.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dual_panel_activity.xml" afterPath="$PROJECT_DIR$/res/layout/dual_panel_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
     </list>
     <ignored path="pnp-toolbox.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371581951739" ignored="false" />
+    <file path="/Dummy.txt" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589904803" ignored="false" />
     <file path="/BuildConfig.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371580064173" ignored="false" />
     <file path="/R.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371580081514" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371583464246" ignored="false" />
     <file path="/HelloAndroidActivity.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371580135459" ignored="false" />
-    <file path="$PROJECT_DIR$/target/generated-sources/r/com/gaems/pnptoolbox/BuildConfig.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371580505489" ignored="false" />
-    <file path="/dual_panel_activity.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371585365207" ignored="false" />
+    <file path="/dual_panel_activity.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589867010" ignored="false" />
     <file path="/character_sheet_fragment.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371582128462" ignored="false" />
-    <file path="/strings.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371583490933" ignored="false" />
-    <file path="/DualPaneActivity.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371585258150" ignored="false" />
-    <file path="/arrays.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371585232695" ignored="false" />
-    <file path="/SpinnerController.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371584890522" ignored="false" />
+    <file path="/strings.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589936672" ignored="false" />
+    <file path="/DualPaneActivity.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371590045358" ignored="false" />
+    <file path="/arrays.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589807423" ignored="false" />
+    <file path="/SpinnerController.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589815684" ignored="false" />
     <file path="/fragment.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371584594875" ignored="false" />
     <file path="/CharacterSheetFragment.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371584439074" ignored="false" />
+    <file path="/spells_fragment.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371588150930" ignored="false" />
+    <file path="/SpellsFragment.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371588250348" ignored="false" />
+    <file path="/notes_fragment.xml" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589925216" ignored="false" />
+    <file path="/notes_fragment.java" changelist="6155db48-8cc1-4f03-a357-e6791236f83b" time="1371589996846" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +134,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" line="40" class="com.gaems.pnptoolbox.views.activities.DualPaneActivity" package="com.gaems.pnptoolbox.views.activities">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" line="47" class="com.gaems.pnptoolbox.views.activities.DualPaneActivity" package="com.gaems.pnptoolbox.views.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" line="58" class="com.gaems.pnptoolbox.views.activities.DualPaneActivity" package="com.gaems.pnptoolbox.views.activities">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -128,14 +175,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dual_panel_activity.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dual_panel_activity.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/dual_panel_activity.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="58" selection-start="543" selection-end="543" vertical-scroll-proportion="0.42767295">
+            <state line="42" column="39" selection-start="1581" selection-end="1581" vertical-scroll-proportion="-12.72">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notes_fragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/notes_fragment.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="396" selection-end="396" vertical-scroll-proportion="-7.48">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotesFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/NotesFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="45" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,10 +222,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DualPaneActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DualPaneActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="35" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
+            <state line="49" column="19" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.25176057">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spells_fragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/spells_fragment.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="261" selection-end="442" vertical-scroll-proportion="-4.76">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpellsFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/SpellsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,11 +257,8 @@
       <file leaf-file-name="CharacterSheetFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/CharacterSheetFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1371584555054" expanded="true" signature="238:317" placeholder="/**...*/" />
-              </folding>
+            <state line="16" column="0" selection-start="374" selection-end="610" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,27 +266,7 @@
       <file leaf-file-name="SpinnerController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="54" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdapterView.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/android/android/4.1.1.4/android-4.1.1.4.jar!/android/widget/AdapterView.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="70" selection-start="4263" selection-end="4264" vertical-scroll-proportion="-21.36">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrays.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="41" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+            <state line="42" column="5" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,28 +275,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="66" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+            <state line="4" column="52" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="68" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloAndroidActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/HelloAndroidActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -251,19 +299,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/target/generated-sources/r/pnp-toolbox/BuildConfig.java" />
         <option value="$PROJECT_DIR$/target/generated-sources/r/pnp-toolbox/R.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/HelloAndroidActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/character_sheet_fragment.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/DualPaneActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/CharacterSheetFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/spells_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/SpellsFragment.java" />
         <option value="$PROJECT_DIR$/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java" />
         <option value="$PROJECT_DIR$/res/layout/dual_panel_activity.xml" />
+        <option value="$PROJECT_DIR$/res/layout/notes_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/notes_fragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/NotesFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java" />
       </list>
     </option>
   </component>
@@ -588,24 +639,6 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -628,25 +661,30 @@
       </MavenSettings>
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -677,6 +715,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -690,19 +741,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CFConfiguration" factoryName="Remote">
-      <option name="PORT" value="80" />
-      <option name="LOCAL" value="false" />
-      <deployment />
-      <server-settings>
-        <option name="USERNAME" value="" />
-        <option name="PASSWORD" value="" />
-        <data />
-      </server-settings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -724,6 +762,19 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="CFConfiguration" factoryName="Remote">
+      <option name="PORT" value="80" />
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+        <data />
+      </server-settings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -781,11 +832,9 @@
     <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992464" sideWeight="0.6708286" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992464" sideWeight="0.6708286" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992464" sideWeight="0.6708286" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.69807035" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -797,16 +846,18 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33030647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30192962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33369213" sideWeight="0.6708286" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497309" sideWeight="0.6708286" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497309" sideWeight="0.69807035" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992464" sideWeight="0.6708286" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992464" sideWeight="0.6708286" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -887,15 +938,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/HelloAndroidActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="7" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="17" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="68" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/android/android/4.1.1.4/android-4.1.1.4.jar!/android/widget/AdapterView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="70" selection-start="4263" selection-end="4264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -910,49 +973,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/SpellsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="68" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="66" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/CharacterSheetFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="46" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1371584555054" expanded="true" signature="238:317" placeholder="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/android/android/4.1.1.4/android-4.1.1.4.jar!/android/widget/AdapterView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="70" selection-start="4263" selection-end="4264" vertical-scroll-proportion="-21.36">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="35" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="54" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0">
+        <state line="9" column="3" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -961,8 +984,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+        <state line="5" column="44" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/controllers/SpinnerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="5" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/spells_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="261" selection-end="442" vertical-scroll-proportion="-4.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="52" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/CharacterSheetFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="374" selection-end="610" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notes_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="396" selection-end="396" vertical-scroll-proportion="-7.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/fragments/NotesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="45" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,7 +1044,14 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="543" selection-end="543" vertical-scroll-proportion="0.42767295">
+        <state line="42" column="39" selection-start="1581" selection-end="1581" vertical-scroll-proportion="-12.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.gaems.pnptoolbox/views/activities/DualPaneActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="19" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.25176057">
           <folding />
         </state>
       </provider>

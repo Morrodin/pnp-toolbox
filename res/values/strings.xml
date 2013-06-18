@@ -7,5 +7,7 @@
     <string name="hello_world">Hello world!</string>
 
     <string name="character_sheet_header">Character Sheet</string>
+    <string name="spells_header">Spells</string>
+    <string name="notes_header">Notes</string>
 
 </resources>

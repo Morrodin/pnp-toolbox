@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="fragments_array">
+    <string-array name="fragments_array_left">
         <item>Character Sheet</item>
+    </string-array>
+    <string-array name="fragments_array_right">
         <item>Spells</item>
         <item>Notes</item>
         <item>Rules</item>

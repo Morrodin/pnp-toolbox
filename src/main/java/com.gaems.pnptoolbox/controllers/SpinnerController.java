@@ -36,7 +36,7 @@ public class SpinnerController {
 
     private void initializeSpinner1() {
         spinner1Adapter = ArrayAdapter.createFromResource(mActivity,
-                R.array.fragments_array, android.R.layout.simple_spinner_item);
+                R.array.fragments_array_left, android.R.layout.simple_spinner_item);
         spinner1Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         container1Spinner.setAdapter(spinner1Adapter);
         container1Spinner.setOnItemSelectedListener(this.spinner1Listener());
@@ -44,7 +44,7 @@ public class SpinnerController {
 
     private void initializeSpinner2() {
         spinner2Adapter = ArrayAdapter.createFromResource(mActivity,
-                R.array.fragments_array, android.R.layout.simple_spinner_item);
+                R.array.fragments_array_right, android.R.layout.simple_spinner_item);
         spinner2Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         container2Spinner.setAdapter(spinner2Adapter);
         container2Spinner.setOnItemSelectedListener(this.spinner2Listener());
@@ -70,7 +70,7 @@ public class SpinnerController {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-                mCallback.spinner1Callback(pos);
+                mCallback.spinner2Callback(pos);
             }
 
             @Override
