@@ -26,12 +26,15 @@ def parseSpellsFile(filename):
 
     return column
 
-def writeToDb(dbName, data):
+def writeToDb(dbName, tableName, data):
     conn = sqlite3.connect(dbName + '.sqlite')
     c = conn.cursor()
 
+    # Remove existing table, if it exists
+    c.execute('''DROP TABLE IF EXISTS ''' + tableName)
+    
     # Create table
-    c.execute('''CREATE TABLE IF NOT EXISTS ''' + dbName + '''(''' + ' text, '.join(data.keys()) + ' text' + ''')''')
+    c.execute('''CREATE TABLE ''' + tableName + '''(''' + ' text, '.join(data.keys()) + ' text' + ''')''')
 
     inserts = zip(*data.values())
     valsString = '('
@@ -40,7 +43,7 @@ def writeToDb(dbName, data):
     valsString += ')'
 
     for dataLine in inserts:
-        c.execute('''INSERT INTO ''' + dbName + ' values ' + valsString, dataLine)
+        c.execute('''INSERT INTO ''' + tableName + ' values ' + valsString, dataLine)
 
     # Save (commit) the changes
     conn.commit()
@@ -56,6 +59,8 @@ def main():
                        help='the name of the input CSV file')
     parser.add_argument('-t', '--type', type=str,
                        help='the type of the input CSV file, e.g. spells')
+    parser.add_argument('-d', '--database', type=str, default='database',
+                       help='the name of the database to use')
 
     args = parser.parse_args()
 
@@ -65,7 +70,7 @@ def main():
         data = parseSpellsFile(args.input)
 
     if data:
-        writeToDb(args.type, data)
+        writeToDb(args.database, args.type, data)
 
 
 if __name__ == "__main__":
