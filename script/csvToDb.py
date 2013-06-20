@@ -3,15 +3,23 @@
 
 import argparse
 import csv
+import re
 import sqlite3
 import sys
 
-def parseSpellsFile(filename):
+def santizeColumnName(name):
+    replaceChars = ['(', ')']
+    name = re.sub('[%s]' % ''.join(replaceChars), '', name)
+    return name
+
+def commonParse(filename):
     # Parsing logic taken from StackOverflow: http://stackoverflow.com/a/3428633/1610271
     f = open(filename, 'rb')
     reader = csv.reader(f)
     headers = reader.next()
     column = {}
+
+    headers = map(santizeColumnName, headers)
 
     for header in headers:
         column[header] = []
@@ -20,9 +28,33 @@ def parseSpellsFile(filename):
         for h, v in zip(headers, row):
             column[h].append(str(v).decode('ascii', 'ignore'))
 
+    return column
+
+def parseFeatsFile(filename):
+    column = commonParse(filename)
+
+    del column['fulltext']
+
+    return column
+
+def parseMagicItemsFile(filename):
+    column = commonParse(filename)
+
+    del column['FullText']
+
+    return column
+
+def parseSpellsFile(filename):
+    column = commonParse(filename)
+
     # Delete HTML-formatted columns, as saving them to the database is unecessarily difficult
     del column['full_text']
     del column['description_formated']
+
+    return column
+
+def parseTraitsFile(filename):
+    column = commonParse(filename)
 
     return column
 
@@ -32,9 +64,10 @@ def writeToDb(dbName, tableName, data):
 
     # Remove existing table, if it exists
     c.execute('''DROP TABLE IF EXISTS ''' + tableName)
-    
+
     # Create table
-    c.execute('''CREATE TABLE ''' + tableName + '''(''' + ' text, '.join(data.keys()) + ' text' + ''')''')
+    # Surround the table and field names with quotes to allow for the use of keywords
+    c.execute(('''CREATE TABLE "%s" ''' % tableName) + '''(%s)''' % ', '.join(map(lambda x : '"%s" text' % x, data.keys())))
 
     inserts = zip(*data.values())
     valsString = '('
@@ -68,6 +101,12 @@ def main():
 
     if args.type == "spells":
         data = parseSpellsFile(args.input)
+    elif args.type == "feats":
+        data = parseFeatsFile(args.input)
+    elif args.type == "magic_items":
+        data = parseMagicItemsFile(args.input)
+    elif args.type == "traits":
+        data = parseTraitsFile(args.input)
 
     if data:
         writeToDb(args.database, args.type, data)
