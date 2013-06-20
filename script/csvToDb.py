@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Copyright (c) 2013, Sierra Bravo Corp., dba The Nerdery.
 
 import argparse
 import csv
