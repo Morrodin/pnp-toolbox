@@ -1,2 +1,8 @@
 script/spell_full.csv:
 Paizo Spells Database. Copyright 2011 Mike Chopswil, d20pfsrd.com
+
+script/feats.csv:
+Pathfinder Roleplaying Game Feats Database. Copyright 2011 Mike Chopswil, d20pfsrd.com
+
+script/traits.csv:
+Paizo Traits Database. Copyright 2011 d20pfsrd.com
