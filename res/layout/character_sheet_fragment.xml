@@ -1,14 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/cs_header_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:text="@string/character_sheet_header"/>
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textSize="25dp"
-        android:text="@string/character_sheet_header"/>
 
-</LinearLayout>
+        <!--Character sheet header-->
+        <LinearLayout
+            android:id="@+id/cs_header_line_1"
+            android:layout_below="@+id/cs_header_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <!--Character name-->
+            <EditText
+                android:id="@+id/cs_character_name_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_character_name"/>
+
+            <!--Player name-->
+            <EditText
+                android:id="@+id/cs_player_name_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_player_name"/>
+
+            <!--Campaign-->
+            <EditText
+                android:id="@+id/cs_campaign_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_campaign"/>
+
+            <!--Current XP-->
+            <EditText
+                android:id="@+id/cs_current_xp_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_current_xp"/>
+
+            <!--Next Level XP-->
+            <EditText
+                android:id="@+id/cs_next_level_xp_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_next_level_xp"/>
+
+            <!--XP Change-->
+            <EditText
+                android:id="@+id/cs_xp_change_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_xp_change"/>
+
+        </LinearLayout>
+
+        <!--Character sheet header Line 2-->
+        <LinearLayout
+            android:id="@+id/cs_header_line_2"
+            android:layout_below="@+id/cs_header_line_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <!--Class-->
+            <EditText
+                android:id="@+id/cs_class_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_class"/>
+
+            <!--Race-->
+            <EditText
+                android:id="@+id/cs_race_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_race"/>
+
+            <!--Alignment-->
+            <EditText
+                android:id="@+id/cs_alignment_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_alignment"/>
+
+            <!--Deity-->
+            <EditText
+                android:id="@+id/cs_deity_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_deity"/>
+
+        </LinearLayout>
+
+        <!--Character sheet header Line 3-->
+        <LinearLayout
+            android:id="@+id/cs_header_line_3"
+            android:layout_below="@+id/cs_header_line_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <!--Level-->
+            <EditText
+                android:id="@+id/cs_level_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_level"/>
+
+            <!--Size-->
+            <EditText
+                android:id="@+id/cs_size_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_size"/>
+
+            <!--Age-->
+            <EditText
+                android:id="@+id/cs_age_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_age"/>
+
+            <!--Gender-->
+            <EditText
+                android:id="@+id/cs_gender_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_gender"/>
+
+            <!--Height-->
+            <EditText
+                android:id="@+id/cs_height_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_height"/>
+
+            <!--Weight-->
+            <EditText
+                android:id="@+id/cs_weight_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_weight"/>
+
+            <!--Eyes-->
+            <EditText
+                android:id="@+id/cs_eyes_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_eyes"/>
+
+            <!--Hair-->
+            <EditText
+                android:id="@+id/cs_hair_input"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/cs_header_hair"/>
+
+        </LinearLayout>
+
+        <!--Attribute Holder layout-->
+        <include layout="@layout/cs_component_ability"/>
+
+        <!-- HP container-->
+        <include layout="@layout/cs_component_hp"/>
+
+        <!--AC Component-->
+        <include layout="@layout/cs_component_ac"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>
