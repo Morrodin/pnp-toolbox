@@ -1,7 +1,6 @@
 package com.gaems.pnptoolbox.viewlocator;
 
-import android.view.ViewGroup;
-import com.gaems.pnptoolbox.viewlocator.Reference;
+import com.gaems.pnptoolbox.viewlocator.reference.Reference;
 
 /**
  * ViewLocatorInterface Interface.
@@ -10,6 +9,6 @@ import com.gaems.pnptoolbox.viewlocator.Reference;
  */
 public interface ViewLocatorInterface {
 
-    public ViewGroup locateViewByReference(Reference reference);
+    public Object locateViewByReference(Reference reference);
 
 }

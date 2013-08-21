@@ -1,5 +1,7 @@
 package com.gaems.pnptoolbox.model.character.implementation;
 
+import com.gaems.pnptoolbox.model.character.CharacterSaveInterface;
+
 /**
  * Primary character model to hold all information (stats, items, etc) associated with a given character.
  *
@@ -14,6 +16,7 @@ public class Character {
     private CharacterSave fortSave;
     private CharacterSave refSave;
     private CharacterSave willSave;
+    private int BAB;
 
     public CharacterAC getAC() {
         return AC;

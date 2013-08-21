@@ -1,10 +1,14 @@
 package com.gaems.pnptoolbox.views.fragments.dialogs;
 
+import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.widget.Button;
 import com.gaems.pnptoolbox.R;
+import com.gaems.pnptoolbox.controllers.SaveEditDialogFragmentController;
+import com.gaems.pnptoolbox.model.character.implementation.CharacterSave;
 
 /**
  * Dialog fragment to edit saves (Fort, Ref, Will)
@@ -13,12 +17,10 @@ import com.gaems.pnptoolbox.R;
  */
 public class SaveEditDialogFragment extends DialogFragment {
 
-    private int mBaseMod;
-    private int mAbilityMod;
-    private int mMagicMod;
-    private int mMiscMod;
-    private int mTempMod;
-    private int
+    private Context mContext;
+    private CharacterSave mCharacterSave;
+    private SaveEditDialogFragmentController mController;
+    private SaveDialogCallback mCallback;
 
     private DialogType mDialogType;
     private Dialog dialog;
@@ -29,7 +31,6 @@ public class SaveEditDialogFragment extends DialogFragment {
         WILL
     }
 
-
     /**
      * Empty/default constructor
      */
@@ -38,91 +39,51 @@ public class SaveEditDialogFragment extends DialogFragment {
 
     /**
      * Full constructor
-     *
-     * @param base
-     *          base class modifier
-     * @param abilityMod
-     *          ability modifier
-     * @param magicMod
-     *          magic modifier
-     * @param miscMod
-     *          misc modifier
-     * @param tempMod
-     *          temporary modifier
-     */
-    public SaveEditDialogFragment(DialogType dialogType, int base, int abilityMod, int magicMod, int miscMod, int tempMod) {
-        this.mBaseMod = base;
-        this.mAbilityMod = abilityMod;
-        this.mMagicMod = magicMod;
-        this.mMiscMod = miscMod;
-        this.mTempMod = tempMod;
+    */
+    public SaveEditDialogFragment(DialogType dialogType, SaveDialogCallback callback,
+                                  Context context, CharacterSave characterSave) {
+        this.mContext = context;
         this.mDialogType = dialogType;
+        this.mCharacterSave = characterSave;
+        this.mCallback = callback;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.mController = new SaveEditDialogFragmentController(mCallback, getActivity(), this, mDialogType);
     }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         dialog = new Dialog(mContext);
-        dialog.setContentView(R.layout.combat_ac_edit_dialog);
-        dialog.setTitle(getString(R.string.ac_edit_dialog_title));
+        dialog.setContentView(R.layout.save_edit_dialog);
+        dialog.setTitle(mController.getCurrentTitle());
 
-        if (mCurrentAC != null) {
-            mController.instantiateFields(mCurrentAC);
+
+        if (mCharacterSave != null) {
+            mController.instantiateFields(mCharacterSave);
         }
 
         //Wire buttons
-        Button okBtn = (Button) dialog.findViewById(R.id.ac_edit_ok);
+        Button okBtn = (Button) dialog.findViewById(R.id.save_edit_ok);
         okBtn.setOnClickListener(mController);
-        Button cancelBtn = (Button) dialog.findViewById(R.id.ac_edit_cancel);
+        Button cancelBtn = (Button) dialog.findViewById(R.id.save_edit_cancel);
         cancelBtn.setOnClickListener(mController);
 
         return dialog;
     }
 
-    public interface saveDialogCallback {
-        public void submitFortSave();
+    public interface SaveDialogCallback {
+        public void submitFortSave(CharacterSave newSave);
 
-        public void submitRefSave();
+        public void submitRefSave(CharacterSave newSave);
 
-        public void submitWillSave();
+        public void submitWillSave(CharacterSave newSave);
     }
 
-    public int getBase() {
-        return mBaseMod;
+    public Dialog getDialog() {
+        return dialog;
     }
 
-    public void setBase(int base) {
-        this.mBaseMod = base;
-    }
-
-    public int getAbilityMod() {
-        return mAbilityMod;
-    }
-
-    public void setAbilityMod(int mAbilityMod) {
-        this.mAbilityMod = mAbilityMod;
-    }
-
-    public int getMagicMod() {
-        return mMagicMod;
-    }
-
-    public void setMagicMod(int mMagicMod) {
-        this.mMagicMod = mMagicMod;
-    }
-
-    public int getMiscMod() {
-        return mMiscMod;
-    }
-
-    public void setMiscMod(int mMiscMod) {
-        this.mMiscMod = mMiscMod;
-    }
-
-    public int getTempMod() {
-        return mTempMod;
-    }
-
-    public void setTempMod(int mTempMod) {
-        this.mTempMod = mTempMod;
-    }
 }

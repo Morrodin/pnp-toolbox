@@ -10,4 +10,101 @@
     <string name="spells_header">Spells</string>
     <string name="notes_header">Notes</string>
 
+    <!--Character sheet-->
+    <string name="cs_ab_str">STR</string>
+    <string name="cs_ab_dex">DEX</string>
+    <string name="cs_ab_con">CON</string>
+    <string name="cs_ab_int">INT</string>
+    <string name="cs_ab_wis">WIS</string>
+    <string name="cs_ab_cha">CHA</string>
+
+    <string name="cs_ab_ab_label">Ability</string>
+    <string name="cs_ab_score_label">Score</string>
+    <string name="cs_ab_mod_label">Mod</string>
+
+    <string name="cs_header_character_name">Character Name</string>
+    <string name="cs_header_player_name">Player</string>
+    <string name="cs_header_campaign">Campaign</string>
+    <string name="cs_header_current_xp">Current XP</string>
+    <string name="cs_header_next_level_xp">Next Level XP</string>
+    <string name="cs_header_xp_change">XP Change</string>
+    <string name="cs_header_class">Class</string>
+    <string name="cs_header_race">Race</string>
+    <string name="cs_header_alignment">Alignment</string>
+    <string name="cs_header_deity">Diety</string>
+
+    <string name="cs_header_level">Level</string>
+    <string name="cs_header_size">Size</string>
+    <string name="cs_header_age">Age</string>
+    <string name="cs_header_gender">Gender</string>
+    <string name="cs_header_height">Height</string>
+    <string name="cs_header_weight">Weight</string>
+    <string name="cs_header_eyes">Eyes</string>
+    <string name="cs_header_hair">Hair</string>
+
+    <string name="cs_hp_hp">HP</string>
+    <string name="cs_hp_total">Total</string>
+    <string name="cs_hp_current">Current HP</string>
+    <string name="cs_hp_nonlethal">Nonlethal Damage</string>
+    <string name="cs_hp_dmg_red">Dmg Red</string>
+
+    <!--Combat-->
+    <string name="combat_header">Combat</string>
+    <string name="combat_ac">AC</string>
+    <string name="combat_ac_touch">TOUCH</string>
+    <string name="combat_ac_flat">FLAT</string>
+
+    <string name="combat_save_will">WILL</string>
+    <string name="combat_save_ref">REF</string>
+    <string name="combat_save_fort">FORT</string>
+
+    <string name="combat_cmb">CMB</string>
+    <string name="combat_cmd">CMD</string>
+
+    <string name="combat_attacks_label">ATTACKS</string>
+
+    <string name="combat_total_hp">TOTAL HP</string>
+    <string name="combat_current_hp">CURRENT</string>
+
+    <string name="combat_hp_plus_10">+10</string>
+    <string name="combat_hp_plus_5">+5</string>
+    <string name="combat_hp_plus_1">+1</string>
+    <string name="combat_hp_minus_10">-10</string>
+    <string name="combat_hp_minus_5">-5</string>
+    <string name="combat_hp_minus_1">-1</string>
+
+    <!--Dialogs-->
+    <string name="ac_edit_dialog_title">Edit AC</string>
+    <string name="ac_edit_ac_ac">AC</string>
+    <string name="ac_edit_ac_total">Total</string>
+    <string name="ac_edit_armor">Armor</string>
+    <string name="ac_edit_shield">Shield</string>
+    <string name="ac_edit_ac_other">Other</string>
+    <string name="ac_edit_ac_dex">Dex</string>
+    <string name="ac_edit_ac_size">Size</string>
+    <string name="ac_edit_ac_natural">Natural</string>
+    <string name="ac_edit_ac_deflect">Deflect</string>
+    <string name="ac_edit_ac_misc">Misc</string>
+
+    <string name="fort_save_edit_dialog_title">Edit Fortitude Save</string>
+    <string name="ref_save_edit_dialog_title">Edit Reflex Save</string>
+    <string name="will_save_edit_dialog_title">Edit Will Save</string>
+    <string name="save_edit_base">Base</string>
+    <string name="save_edit_ability">Ability</string>
+    <string name="save_edit_magic">Magic</string>
+    <string name="save_edit_misc">Misc</string>
+    <string name="save_edit_temp">Temp</string>
+
+    <string name="cmb_edit_dialog_title">Edit CMB</string>
+    <string name="cmd_edit_dialog_title">Edit CMD</string>
+    <string name="cmb_cmd_edit_bab">BAB</string>
+    <string name="cmb_cmd_edit_str">Str</string>
+    <string name="cmb_cmd_edit_dex">Dex</string>
+
+    <!--Reused strings-->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+
+
 </resources>

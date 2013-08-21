@@ -1,5 +1,6 @@
 package com.gaems.pnptoolbox.controllers;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.TranslateAnimation;
+import android.widget.LinearLayout;
 
 /**
  * Controller class to manage different animation types.
@@ -15,21 +17,11 @@ import android.view.animation.TranslateAnimation;
  */
 public class AnimationService {
 
-    public void doSlideDown(ViewGroup view, Context ctx){
-//        RelativeLayout myView = (RelativeLayout) mActivity.findViewById(R.id.my_view);
+    private ViewGroup view;
 
+    public ViewGroup setLayoutAnim_slidedown(ViewGroup panel) {
 
-        setLayoutAnim_slidedown(view, ctx);
-        view.startLayoutAnimation();
-    }
-
-    public void doSlideUp(ViewGroup view, Context ctx){
-//        RelativeLayout myView = (RelativeLayout) mActivity.findViewById(R.id.combat_ac);
-        setLayoutAnim_slideup(view, ctx);
-        view.startLayoutAnimation();
-    }
-
-    public void setLayoutAnim_slidedown(final ViewGroup panel, Context ctx) {
+        view = panel;
 
         AnimationSet set = new AnimationSet(true);
 
@@ -37,14 +29,13 @@ public class AnimationService {
                 Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF,
                 0.0f, Animation.RELATIVE_TO_SELF, -1.0f,
                 Animation.RELATIVE_TO_SELF, 0.0f);
-        animation.setDuration(800);
+        animation.setDuration(300);
         animation.setAnimationListener(new Animation.AnimationListener() {
 
             @Override
             public void onAnimationStart(Animation animation) {
-                // TODO Auto-generated method stub
-                panel.setVisibility(View.VISIBLE);
-
+//                view.setVisibility(View.VISIBLE);
+//                view.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             }
 
             @Override
@@ -64,29 +55,26 @@ public class AnimationService {
 
         LayoutAnimationController controller = new LayoutAnimationController(
                 set, 0.25f);
-        panel.setLayoutAnimation(controller);
+        view.setLayoutAnimation(controller);
 
+        return view;
     }
 
-    public void setLayoutAnim_slideup(final ViewGroup panel, Context ctx) {
+    public ViewGroup setLayoutAnim_slideup(ViewGroup panel) {
+
+        view = panel;
 
         AnimationSet set = new AnimationSet(true);
-
-		/*
-		 * Animation animation = new AlphaAnimation(1.0f, 0.0f);
-		 * animation.setDuration(200); set.addAnimation(animation);
-		 */
 
         Animation animation = new TranslateAnimation(
                 Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF,
                 0.0f, Animation.RELATIVE_TO_SELF, 0.0f,
                 Animation.RELATIVE_TO_SELF, -1.0f);
-        animation.setDuration(800);
+        animation.setDuration(300);
         animation.setAnimationListener(new Animation.AnimationListener() {
 
             @Override
             public void onAnimationStart(Animation animation) {
-                // TODO Auto-generated method stub
 
             }
 
@@ -98,17 +86,18 @@ public class AnimationService {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                panel.setVisibility(View.INVISIBLE);
-                // TODO Auto-generated method stub
-
+//                view.setVisibility(View.INVISIBLE);
+//               view.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 0));
             }
         });
         set.addAnimation(animation);
 
         LayoutAnimationController controller = new LayoutAnimationController(
                 set, 0.25f);
-        panel.setLayoutAnimation(controller);
+        view.setLayoutAnimation(controller);
 
+        return view;
     }
+
 
 }

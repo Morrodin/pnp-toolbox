@@ -1,8 +1,422 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/combat_header"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/combat_char_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Cynric"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:onClick="com."
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_header_label"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/combat_char_name"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/combat_header"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="1dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+    </LinearLayout>
 
-</LinearLayout>
+
+    <!--HP Container-->
+    <LinearLayout
+        android:id="@+id/combat_hp_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/combat_header">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="1dp">
+            <!--Total HP-->
+            <LinearLayout
+                android:id="@+id/combat_total_hp_container"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:id="@+id/combat_total_hp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/combat_total_hp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/black"/>
+                <TextView
+                    android:id="@+id/combat_total_hp_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="93"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+
+            <!--Current HP-->
+            <LinearLayout
+                android:id="@+id/combat_current_hp_container"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:id="@+id/combat_current_hp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/combat_current_hp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/black"/>
+                <TextView
+                    android:id="@+id/combat_current_hp_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="65"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/combat_mod_hp_buttons"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <!-- +10 -->
+            <TextView
+                android:id="@+id/combat_hp_plus_10"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/combat_hp_plus_10"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- +5 -->
+            <TextView
+                android:id="@+id/combat_hp_plus_5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/combat_hp_plus_5"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- +1 -->
+            <TextView
+                android:id="@+id/combat_hp_plus_1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/combat_hp_plus_1"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- -10 -->
+            <TextView
+                android:id="@+id/combat_hp_minus_10"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/combat_hp_minus_10"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- -5 -->
+            <TextView
+                android:id="@+id/combat_hp_minus_5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/combat_hp_minus_5"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- -1 -->
+            <TextView
+                android:id="@+id/combat_hp_minus_1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/combat_hp_minus_1"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:layout_marginRight="1dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!--AC Container-->
+    <LinearLayout
+        android:id="@+id/combat_ac_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/combat_hp_container">
+
+        <!--Total AC-->
+        <TextView
+            android:id="@+id/combat_ac"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_ac"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_ac_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="27"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+        <!--Touch AC-->
+        <TextView
+            android:id="@+id/combat_ac_touch"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_ac_touch"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_ac_touch_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="15"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+
+        <!--Flatfooted AC-->
+        <TextView
+            android:id="@+id/combat_ac_flat"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_ac_flat"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_ac_flat_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="15"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/combat_saves_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/combat_ac_container">
+
+        <!--Fort-->
+        <TextView
+            android:id="@+id/combat_save_fort"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_save_fort"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_save_fort_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="9"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+        <!--Ref-->
+        <TextView
+            android:id="@+id/combat_save_ref"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_save_ref"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_save_ref_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="9"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+        <!--Will-->
+        <TextView
+            android:id="@+id/combat_save_will"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_save_will"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_save_will_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="12"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <!--CMB/CMD-->
+    <LinearLayout
+        android:id="@+id/combat_cmb_cmd_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/combat_saves_container"
+        android:layout_marginBottom="10dp">
+
+        <!--CMB-->
+        <TextView
+            android:id="@+id/combat_cmb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_cmb"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_cmb_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="14"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+
+        <!--CMD-->
+        <TextView
+            android:id="@+id/combat_cmd"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/combat_cmd"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"/>
+        <TextView
+            android:id="@+id/combat_cmd_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="22"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <!--Attacks-->
+    <LinearLayout
+        android:id="@+id/attacks_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/combat_cmb_cmd_container"
+        android:background="@android:color/black">
+
+        <!--Header-->
+        <TextView
+            android:id="@+id/combat_attack_label"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/combat_attacks_label"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/combat_add_attack"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            android:layout_marginRight="10dp"
+            android:text="+"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

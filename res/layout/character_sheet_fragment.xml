@@ -10,175 +10,172 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/cs_header_title"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="25dp"
-            android:text="@string/character_sheet_header"/>
+        <!--<TextView-->
+            <!--android:id="@+id/cs_header_title"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="25dp"-->
+            <!--android:text="@string/character_sheet_header"/>-->
 
 
-        <!--Character sheet header-->
-        <LinearLayout
-            android:id="@+id/cs_header_line_1"
-            android:layout_below="@+id/cs_header_title"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content">
+        <!--&lt;!&ndash;Character sheet header&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/cs_header_line_1"-->
+            <!--android:layout_below="@+id/cs_header_title"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content">-->
 
-            <!--Character name-->
-            <EditText
-                android:id="@+id/cs_character_name_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_character_name"/>
+            <!--&lt;!&ndash;Character name&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_character_name_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_character_name"/>-->
 
-            <!--Player name-->
-            <EditText
-                android:id="@+id/cs_player_name_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_player_name"/>
+            <!--&lt;!&ndash;Player name&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_player_name_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_player_name"/>-->
 
-            <!--Campaign-->
-            <EditText
-                android:id="@+id/cs_campaign_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_campaign"/>
+            <!--&lt;!&ndash;Campaign&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_campaign_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_campaign"/>-->
 
-            <!--Current XP-->
-            <EditText
-                android:id="@+id/cs_current_xp_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_current_xp"/>
+            <!--&lt;!&ndash;Current XP&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_current_xp_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_current_xp"/>-->
 
-            <!--Next Level XP-->
-            <EditText
-                android:id="@+id/cs_next_level_xp_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_next_level_xp"/>
+            <!--&lt;!&ndash;Next Level XP&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_next_level_xp_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_next_level_xp"/>-->
 
-            <!--XP Change-->
-            <EditText
-                android:id="@+id/cs_xp_change_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_xp_change"/>
+            <!--&lt;!&ndash;XP Change&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_xp_change_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_xp_change"/>-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
-        <!--Character sheet header Line 2-->
-        <LinearLayout
-            android:id="@+id/cs_header_line_2"
-            android:layout_below="@+id/cs_header_line_1"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content">
+        <!--&lt;!&ndash;Character sheet header Line 2&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/cs_header_line_2"-->
+            <!--android:layout_below="@+id/cs_header_line_1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content">-->
 
-            <!--Class-->
-            <EditText
-                android:id="@+id/cs_class_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_class"/>
+            <!--&lt;!&ndash;Class&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_class_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_class"/>-->
 
-            <!--Race-->
-            <EditText
-                android:id="@+id/cs_race_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_race"/>
+            <!--&lt;!&ndash;Race&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_race_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_race"/>-->
 
-            <!--Alignment-->
-            <EditText
-                android:id="@+id/cs_alignment_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_alignment"/>
+            <!--&lt;!&ndash;Alignment&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_alignment_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_alignment"/>-->
 
-            <!--Deity-->
-            <EditText
-                android:id="@+id/cs_deity_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_deity"/>
+            <!--&lt;!&ndash;Deity&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_deity_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_deity"/>-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
-        <!--Character sheet header Line 3-->
-        <LinearLayout
-            android:id="@+id/cs_header_line_3"
-            android:layout_below="@+id/cs_header_line_2"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content">
+        <!--&lt;!&ndash;Character sheet header Line 3&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/cs_header_line_3"-->
+            <!--android:layout_below="@+id/cs_header_line_2"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content">-->
 
-            <!--Level-->
-            <EditText
-                android:id="@+id/cs_level_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_level"/>
+            <!--&lt;!&ndash;Level&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_level_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_level"/>-->
 
-            <!--Size-->
-            <EditText
-                android:id="@+id/cs_size_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_size"/>
+            <!--&lt;!&ndash;Size&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_size_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_size"/>-->
 
-            <!--Age-->
-            <EditText
-                android:id="@+id/cs_age_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_age"/>
+            <!--&lt;!&ndash;Age&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_age_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_age"/>-->
 
-            <!--Gender-->
-            <EditText
-                android:id="@+id/cs_gender_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_gender"/>
+            <!--&lt;!&ndash;Gender&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_gender_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_gender"/>-->
 
-            <!--Height-->
-            <EditText
-                android:id="@+id/cs_height_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_height"/>
+            <!--&lt;!&ndash;Height&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_height_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_height"/>-->
 
-            <!--Weight-->
-            <EditText
-                android:id="@+id/cs_weight_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_weight"/>
+            <!--&lt;!&ndash;Weight&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_weight_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_weight"/>-->
 
-            <!--Eyes-->
-            <EditText
-                android:id="@+id/cs_eyes_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_eyes"/>
+            <!--&lt;!&ndash;Eyes&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_eyes_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_eyes"/>-->
 
-            <!--Hair-->
-            <EditText
-                android:id="@+id/cs_hair_input"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="@string/cs_header_hair"/>
+            <!--&lt;!&ndash;Hair&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/cs_hair_input"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:hint="@string/cs_header_hair"/>-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
-        <!--Attribute Holder layout-->
-        <include layout="@layout/cs_component_ability"/>
+        <!--&lt;!&ndash;Attribute Holder layout&ndash;&gt;-->
+        <!--<include layout="@layout/cs_component_ability"/>-->
 
-        <!-- HP container-->
-        <include layout="@layout/cs_component_hp"/>
-
-        <!--AC Component-->
-        <include layout="@layout/cs_component_ac"/>
+        <!--&lt;!&ndash; HP container&ndash;&gt;-->
+        <!--<include layout="@layout/cs_component_hp"/>-->
 
 
 

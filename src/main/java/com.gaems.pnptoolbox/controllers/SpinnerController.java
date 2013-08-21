@@ -1,11 +1,16 @@
 package com.gaems.pnptoolbox.controllers;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import com.gaems.pnptoolbox.R;
+import com.gaems.pnptoolbox.viewlocator.PrimaryViewLocator;
+import com.gaems.pnptoolbox.viewlocator.ViewLocator;
+import com.gaems.pnptoolbox.viewlocator.reference.Spinner1;
+import com.gaems.pnptoolbox.viewlocator.reference.Spinner2;
 
 /**
  * Controller to manage the setup and functionality of the view changing spinners.
@@ -16,8 +21,9 @@ public class SpinnerController {
 
     Activity mActivity;
     SpinnerCallback mCallback;
-    Spinner container1Spinner;
-    Spinner container2Spinner;
+    Spinner facet1Spinner;
+    Spinner facet2Spinner;
+    private ViewLocator mViewLocator;
 
     ArrayAdapter<CharSequence> spinner1Adapter;
     ArrayAdapter<CharSequence> spinner2Adapter;
@@ -25,29 +31,33 @@ public class SpinnerController {
     public SpinnerController(Activity activity, SpinnerCallback callback) {
         mActivity = activity;
         mCallback = callback;
+        mViewLocator = new PrimaryViewLocator(mActivity.getWindow().getDecorView());
     }
 
     public void setUp() {
-        container1Spinner = (Spinner) mActivity.findViewById(R.id.container_1_spinner);
-        container2Spinner = (Spinner) mActivity.findViewById(R.id.container_2_spinner);
+        facet1Spinner = (Spinner) mViewLocator.locateViewByReference(new Spinner1());
+        facet2Spinner = (Spinner) mViewLocator.locateViewByReference(new Spinner2());
         initializeSpinner1();
-        initializeSpinner2();
+        //Second facet/spinner is only shown in landscape.
+        if (mActivity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            initializeSpinner2();
+        }
     }
 
     private void initializeSpinner1() {
         spinner1Adapter = ArrayAdapter.createFromResource(mActivity,
                 R.array.fragments_array_left, android.R.layout.simple_spinner_item);
         spinner1Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        container1Spinner.setAdapter(spinner1Adapter);
-        container1Spinner.setOnItemSelectedListener(this.spinner1Listener());
+        facet1Spinner.setAdapter(spinner1Adapter);
+        facet1Spinner.setOnItemSelectedListener(this.spinner1Listener());
     }
 
     private void initializeSpinner2() {
         spinner2Adapter = ArrayAdapter.createFromResource(mActivity,
                 R.array.fragments_array_right, android.R.layout.simple_spinner_item);
         spinner2Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        container2Spinner.setAdapter(spinner2Adapter);
-        container2Spinner.setOnItemSelectedListener(this.spinner2Listener());
+        facet2Spinner.setAdapter(spinner2Adapter);
+        facet2Spinner.setOnItemSelectedListener(this.spinner2Listener());
     }
 
     protected AdapterView.OnItemSelectedListener spinner1Listener() {

@@ -13,7 +13,7 @@ import com.gaems.pnptoolbox.views.fragments.NotesFragment;
 import com.gaems.pnptoolbox.views.fragments.SpellsFragment;
 
 /**
- * Management activity for the primary dual-panel layout
+ * Management activity for the primary dual-facet layout
  *
  * @author: kwatson
  */
@@ -29,9 +29,9 @@ public class FacetActivity extends FragmentActivity implements SpinnerController
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getResources().getBoolean(R.bool.portrait_only)){
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        }
+//        if(getResources().getBoolean(R.bool.portrait_only)){
+//            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//        }
         setContentView(R.layout.dual_panel_activity);
 
         mSpinnerController = new SpinnerController(this, this);

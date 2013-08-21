@@ -1,7 +1,9 @@
 package com.gaems.pnptoolbox.viewlocator;
 
 /**
+ * Abstract class for View Locator. Implements ViewLocatorInterface.
+ *
  * @author Kenton Watson (kwatson@nerdery.com)
  */
-public class ViewLocator {
+public abstract class ViewLocator implements ViewLocatorInterface {
 }

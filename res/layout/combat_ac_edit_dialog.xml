@@ -1,8 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ac_edit_labels_container"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/ac_edit_armor"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_armor"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/ac_edit_shield"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_shield"/>
+
+        <TextView
+            android:id="@+id/ac_edit_dex"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_width="45dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_ac_dex"/>
+
+        <TextView
+            android:id="@+id/ac_edit_size"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:gravity="center"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_ac_size"/>
+
+        <TextView
+            android:id="@+id/ac_edit_natural"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_ac_natural"/>
+
+        <TextView
+            android:id="@+id/ac_edit_deflect"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_ac_deflect"/>
+
+        <TextView
+            android:id="@+id/ac_edit_misc"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/ac_edit_ac_misc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_edit_inputs_container"
+        android:layout_below="@id/ac_edit_labels_container"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:id="@+id/ac_edit_armor_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginRight="2dp"
+            android:layout_width="45dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ac_edit_shield_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginRight="2dp"
+            android:layout_width="45dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ac_edit_dex_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_width="45dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ac_edit_size_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_width="45dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ac_edit_natural_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginRight="2dp"
+            android:layout_width="50dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ac_edit_deflect_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginRight="2dp"
+            android:layout_width="45dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ac_edit_misc_input"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginRight="2dp"
+            android:layout_width="45dp"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac_edit_inputs_container"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/ac_edit_ok"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ok"/>
+
+        <Button
+            android:id="@+id/ac_edit_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

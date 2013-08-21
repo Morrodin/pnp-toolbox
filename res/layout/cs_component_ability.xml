@@ -1,8 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:id="@+id/cs_attributes_holder"
+    android:layout_below="@+id/cs_header_line_3"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <!--Labels-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            style="@style/CsAbHeaders"
+            android:layout_marginRight="5dp"
+            android:text="@string/cs_ab_ab_label"/>
+        <TextView
+            style="@style/CsAbHeaders"
+            android:layout_marginRight="5dp"
+            android:text="@string/cs_ab_score_label"/>
+
+        <TextView
+            style="@style/CsAbHeaders"
+            android:text="@string/cs_ab_mod_label"/>
+
+    </LinearLayout>
+
+    <!--STR-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/CsAbLabel"
+            android:text="@string/cs_ab_str"/>
+        <EditText
+            android:id="@+id/cs_ab_str_score"
+            style="@style/CsAbEditText"/>
+        <EditText
+            style="@style/CsAbEditText"/>
+    </LinearLayout>
+
+    <!--DEX-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/CsAbLabel"
+            android:text="@string/cs_ab_dex"/>
+        <EditText
+            android:id="@+id/cs_ab_dex_score"
+            style="@style/CsAbEditText"/>
+        <EditText
+            style="@style/CsAbEditText"/>
+    </LinearLayout>
+
+    <!--CON-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/CsAbLabel"
+            android:text="@string/cs_ab_con"/>
+        <EditText
+            android:id="@+id/cs_ab_con_score"
+            style="@style/CsAbEditText"/>
+        <EditText
+            style="@style/CsAbEditText"/>
+    </LinearLayout>
+
+    <!--INT-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/CsAbLabel"
+            android:text="@string/cs_ab_int"/>
+        <EditText
+            android:id="@+id/cs_ab_int_score"
+            style="@style/CsAbEditText"/>
+        <EditText
+            style="@style/CsAbEditText"/>
+    </LinearLayout>
+
+    <!--WIS-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/CsAbLabel"
+            android:text="@string/cs_ab_wis"/>
+        <EditText
+            android:id="@+id/cs_ab_wis_score"
+            style="@style/CsAbEditText"/>
+        <EditText
+            style="@style/CsAbEditText"/>
+    </LinearLayout>
+
+    <!--CHA-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/CsAbLabel"
+            android:text="@string/cs_ab_cha"/>
+        <EditText
+            android:id="@+id/cs_ab_cha_score"
+            style="@style/CsAbEditText"/>
+        <EditText
+            style="@style/CsAbEditText"/>
+    </LinearLayout>
 
 </LinearLayout>

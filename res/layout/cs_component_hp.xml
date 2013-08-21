@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:id="@+id/cs_hp_container"
+    android:layout_below="@id/cs_header_line_3"
+    android:layout_toRightOf="@id/cs_attributes_holder"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <TextView
+        style="@style/CsAbLabel"
+        android:text="@string/cs_hp_hp"/>
+
+    <!--HP Total-->
+    <EditText
+        android:id="@+id/cs_hp_total_input"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/cs_hp_total"/>
+
+    <!--HP Current-->
+    <EditText
+        android:id="@+id/cs_hp_current_input"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/cs_hp_current"/>
+
+    <!--HP Nonlethal-->
+    <EditText
+        android:id="@+id/cs_hp_nonlethal_input"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/cs_hp_nonlethal"/>
+
+    <!--HP Dmg Reduction-->
+    <EditText
+        android:id="@+id/cs_hp_dmg_red_input"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/cs_hp_dmg_red"/>
 
 </LinearLayout>

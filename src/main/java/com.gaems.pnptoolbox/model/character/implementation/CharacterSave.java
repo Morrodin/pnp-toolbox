@@ -9,17 +9,40 @@ import com.gaems.pnptoolbox.model.character.CharacterSaveInterface;
  */
 public class CharacterSave implements com.gaems.pnptoolbox.model.character.CharacterSaveInterface {
 
-    private int baseMod;
-    private int abilityMod;
-    private int magicMod;
-    private int miscMod;
-    private int tempMod;
+    private Integer baseMod;
+    private Integer abilityMod;
+    private Integer magicMod;
+    private Integer miscMod;
+    private Integer tempMod;
 
     /**
-     * Calculates the fort save
+     * Full constructor
+     *
+     * @param baseMod
+     * @param abilityMod
+     * @param magicMod
+     * @param miscMod
+     * @param tempMod
+     */
+    public CharacterSave(int baseMod, int abilityMod, int magicMod, int miscMod, int tempMod) {
+        this.baseMod = baseMod;
+        this.abilityMod = abilityMod;
+        this.magicMod = magicMod;
+        this.miscMod = miscMod;
+        this.tempMod = tempMod;
+    }
+
+    /**
+     * Empty/default constructor
+     */
+    public CharacterSave() {
+    }
+
+    /**
+     * Calculates the save
      *
      * @return
-     *      calculated fort save
+     *      calculated save
      */
     @Override
     public int calculate() {
@@ -27,7 +50,11 @@ public class CharacterSave implements com.gaems.pnptoolbox.model.character.Chara
     }
 
     public int getBaseMod() {
-        return baseMod;
+        if (baseMod != null) {
+            return baseMod;
+        } else {
+            return 0;
+        }
     }
 
     public void setBaseMod(int baseMod) {
@@ -35,7 +62,11 @@ public class CharacterSave implements com.gaems.pnptoolbox.model.character.Chara
     }
 
     public int getAbilityMod() {
-        return abilityMod;
+        if (abilityMod != null) {
+            return abilityMod;
+        } else {
+            return 0;
+        }
     }
 
     public void setAbilityMod(int abilityMod) {
@@ -43,7 +74,11 @@ public class CharacterSave implements com.gaems.pnptoolbox.model.character.Chara
     }
 
     public int getMagicMod() {
-        return magicMod;
+        if (magicMod != null) {
+            return magicMod;
+        } else {
+            return 0;
+        }
     }
 
     public void setMagicMod(int magicMod) {
@@ -51,7 +86,11 @@ public class CharacterSave implements com.gaems.pnptoolbox.model.character.Chara
     }
 
     public int getMiscMod() {
-        return miscMod;
+        if (miscMod != null) {
+            return miscMod; }
+        else {
+            return 0;
+        }
     }
 
     public void setMiscMod(int miscMod) {
@@ -59,7 +98,11 @@ public class CharacterSave implements com.gaems.pnptoolbox.model.character.Chara
     }
 
     public int getTempMod() {
-        return tempMod;
+        if (tempMod != null) {
+            return tempMod;
+        } else {
+            return 0;
+        }
     }
 
     public void setTempMod(int tempMod) {
