@@ -1,14 +1,11 @@
 package com.gaems.pnptoolbox.controllers;
 
-import android.app.ActionBar;
-import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.TranslateAnimation;
-import android.widget.LinearLayout;
 
 /**
  * Controller class to manage different animation types.
@@ -17,11 +14,11 @@ import android.widget.LinearLayout;
  */
 public class AnimationService {
 
-    private ViewGroup view;
+    private ViewGroup mView;
 
     public ViewGroup setLayoutAnim_slidedown(ViewGroup panel) {
 
-        view = panel;
+        mView = panel;
 
         AnimationSet set = new AnimationSet(true);
 
@@ -34,8 +31,8 @@ public class AnimationService {
 
             @Override
             public void onAnimationStart(Animation animation) {
-//                view.setVisibility(View.VISIBLE);
-//                view.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+//                mView.setVisibility(View.VISIBLE);
+//                mView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             }
 
             @Override
@@ -54,15 +51,15 @@ public class AnimationService {
         set.addAnimation(animation);
 
         LayoutAnimationController controller = new LayoutAnimationController(
-                set, 0.25f);
-        view.setLayoutAnimation(controller);
+                set, 0.0f);
+        mView.setLayoutAnimation(controller);
 
-        return view;
+        return mView;
     }
 
     public ViewGroup setLayoutAnim_slideup(ViewGroup panel) {
 
-        view = panel;
+        mView = panel;
 
         AnimationSet set = new AnimationSet(true);
 
@@ -86,17 +83,17 @@ public class AnimationService {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-//                view.setVisibility(View.INVISIBLE);
-//               view.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 0));
+
+                mView.setVisibility(View.GONE);
             }
         });
         set.addAnimation(animation);
 
         LayoutAnimationController controller = new LayoutAnimationController(
-                set, 0.25f);
-        view.setLayoutAnimation(controller);
+                set, 0.0f);
+        mView.setLayoutAnimation(controller);
 
-        return view;
+        return mView;
     }
 
 

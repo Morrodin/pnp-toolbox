@@ -5,4 +5,6 @@ package com.gaems.pnptoolbox.model.character.implementation;
  */
 public class CharacterCMB {
 
+    private int miscBonus;
+
 }

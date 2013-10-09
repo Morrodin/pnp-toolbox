@@ -1,14 +1,12 @@
 package com.gaems.pnptoolbox.mapper;
 
 import android.content.Context;
-import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.gaems.pnptoolbox.R;
 import com.gaems.pnptoolbox.controllers.AnimationService;
-import com.gaems.pnptoolbox.model.character.CharacterSaveInterface;
 import com.gaems.pnptoolbox.model.character.implementation.CharacterAC;
 import com.gaems.pnptoolbox.model.character.implementation.CharacterSave;
 import com.gaems.pnptoolbox.viewlocator.PrimaryViewLocator;
@@ -22,7 +20,7 @@ public class CombatFragmentViewMapper extends ViewMapper {
 
     private Context mContext;
     private View mParentView;
-    private AnimationService animService;
+    private AnimationService mAnimService;
     private ViewLocator mViewLocator;
 
     /**
@@ -35,7 +33,7 @@ public class CombatFragmentViewMapper extends ViewMapper {
     public CombatFragmentViewMapper(View parentView, Context ctx) {
         mParentView = parentView;
         mContext = ctx;
-        animService = new AnimationService();
+        mAnimService = new AnimationService();
         mViewLocator = new PrimaryViewLocator(mParentView);
     }
 
@@ -50,13 +48,8 @@ public class CombatFragmentViewMapper extends ViewMapper {
     public void doSlideUpOnButtonPress(Reference reference) {
         final ViewGroup view = (ViewGroup) mViewLocator.locateViewByReference(reference);
         view.postInvalidate();
-        animService.setLayoutAnim_slideup(view);
+        mAnimService.setLayoutAnim_slideup(view);
         view.startLayoutAnimation();
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                view.setVisibility(View.GONE);
-            }
-        }, 350);
     }
 
     /**
@@ -69,7 +62,7 @@ public class CombatFragmentViewMapper extends ViewMapper {
      */
     public void doSlideDownOnButtonPress(Reference reference) {
         final ViewGroup view = (ViewGroup) mViewLocator.locateViewByReference(reference);
-        animService.setLayoutAnim_slidedown(view);
+        mAnimService.setLayoutAnim_slidedown(view);
         view.startLayoutAnimation();
         view.setVisibility(View.VISIBLE);
     }

@@ -10,6 +10,11 @@
     <string name="spells_header">Spells</string>
     <string name="notes_header">Notes</string>
 
+
+    <!--Sign in activity-->
+    <string name="account_name_label">Account Name</string>
+    <string name="sign_in">Sign In</string>
+
     <!--Character sheet-->
     <string name="cs_ab_str">STR</string>
     <string name="cs_ab_dex">DEX</string>
@@ -104,6 +109,7 @@
     <!--Reused strings-->
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+
 
 
 
