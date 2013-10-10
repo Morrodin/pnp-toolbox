@@ -12,7 +12,7 @@ public class Armor implements ItemInterface, ArmorInterface {
     /**
      * Delegate ItemInterface methods to a private internal object.
      */
-    private Item mItem;
+    private ItemInterface mItem;
 
     private String mWeightClass;
     private Integer mBonus;
