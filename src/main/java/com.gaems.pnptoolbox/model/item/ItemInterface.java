@@ -1,6 +1,6 @@
 package com.gaems.pnptoolbox.model.item;
 
-import com.gaems.pnptoolbox.model.SourceBook;
+import com.gaems.pnptoolbox.model.Book;
 
 /**
  * Interface for all objects representing items.
@@ -27,6 +27,6 @@ public interface ItemInterface {
     public ItemEffects getItemEffects();
     public void setItemEffects(ItemEffects itemEffects);
 
-    public SourceBook getSourceBook();
-    public void setSourceBook(SourceBook book);
+    public Book getSourceBook();
+    public void setSourceBook(Book book);
 }

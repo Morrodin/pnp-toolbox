@@ -1,9 +1,9 @@
 package com.gaems.pnptoolbox.model.item.equipment;
 
+import com.gaems.pnptoolbox.model.Book;
 import com.gaems.pnptoolbox.model.item.Item;
 import com.gaems.pnptoolbox.model.item.ItemEffects;
 import com.gaems.pnptoolbox.model.item.ItemInterface;
-import com.gaems.pnptoolbox.model.SourceBook;
 
 /**
  * Model class representing a piece of armor.
@@ -156,12 +156,12 @@ public class Armor implements ItemInterface, ArmorInterface {
     }
 
     @Override
-    public SourceBook getSourceBook() {
+    public Book getSourceBook() {
         return mItem.getSourceBook();
     }
 
     @Override
-    public void setSourceBook(SourceBook book) {
+    public void setSourceBook(Book book) {
         mItem.setSourceBook(book);
     }
 }

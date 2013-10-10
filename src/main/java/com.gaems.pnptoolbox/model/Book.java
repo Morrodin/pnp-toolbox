@@ -3,7 +3,7 @@ package com.gaems.pnptoolbox.model;
 /**
  * Represents a game book.
  */
-public class SourceBook {
+public class Book {
     private Integer mId;
     private String mName;
     private String mDescription;

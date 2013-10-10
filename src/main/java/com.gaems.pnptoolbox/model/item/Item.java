@@ -1,6 +1,6 @@
 package com.gaems.pnptoolbox.model.item;
 
-import com.gaems.pnptoolbox.model.SourceBook;
+import com.gaems.pnptoolbox.model.Book;
 
 /**
  * Represents an item.
@@ -15,7 +15,7 @@ public class Item implements ItemInterface {
 
     private ItemEffects mItemEffects;
 
-    private SourceBook mSourceBook;
+    private Book mSourceBook;
 
     @Override
     public Integer getId() {
@@ -88,12 +88,12 @@ public class Item implements ItemInterface {
     }
 
     @Override
-    public SourceBook getSourceBook() {
+    public Book getSourceBook() {
         return mSourceBook;
     }
 
     @Override
-    public void setSourceBook(SourceBook book) {
+    public void setSourceBook(Book book) {
         mSourceBook = book;
     }
 }
